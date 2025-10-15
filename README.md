@@ -1,4 +1,4 @@
-# 🧠 Tokenized Semantic Communication Paper Collection
+# ⭐ Tokenized Semantic Communication Paper Collection
 
 A curated list of recent and representative works on **Tokenization-driven Semantic Communication (TokenCom / TokCom)** —  
 a paradigm integrating **token-level representation**, **semantic encoding**, and **LLM-guided transmission**.  
