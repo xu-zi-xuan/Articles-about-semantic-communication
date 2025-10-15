@@ -58,7 +58,6 @@ These frameworks leverage **Transformers**, **LLMs**, and **cross-modal embeddin
 
 - Adaptive token selection for edge AI and goal-oriented tasks  
 - Token-domain collision mitigation and semantic orthogonality  
-- Integration of **Information Bottleneck (IB)** and token-based encoders  
 - Generative semantic reconstruction with multimodal LLMs  
 - Resource-efficient token scheduling for large-scale networks  
 
