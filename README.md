@@ -15,7 +15,7 @@ These frameworks leverage **Transformers**, **LLMs**, and **cross-modal embeddin
 
 ---
 
-## 🧩 Core Papers (Newest → Oldest)
+## 🧩 Core Papers
 
 | Year | Title | Authors / Affiliations | Link |
 |------|--------|------------------------|------|
