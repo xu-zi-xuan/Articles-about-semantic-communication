@@ -7,8 +7,7 @@ This repository aims to organize cutting-edge research bridging **semantic commu
 
 ## 📘 Overview
 
-Traditional communication systems aim to transmit bits faithfully.  
-**Semantic communication** instead focuses on transmitting *meaning*.  
+Traditional communication systems aim to transmit bits faithfully. **Semantic communication** instead focuses on transmitting *meaning*.  
 Recent studies propose **token-level communication frameworks**, where tokens (semantic units) become the basic transmission symbols.  
 These frameworks leverage **Transformers**, **LLMs**, and **cross-modal embeddings** to achieve higher semantic efficiency, compression, and interpretability.
 
