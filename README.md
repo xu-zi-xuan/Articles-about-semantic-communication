@@ -1,62 +1,75 @@
 # ⭐ Tokenized Semantic Communication Paper Collection
 
-A curated list of recent and representative works on **Tokenization-driven Semantic Communication (TokenCom / TokCom)** — a paradigm integrating **token-level representation**, **semantic encoding**, and **LLM-guided transmission**.  
-This repository aims to organize cutting-edge research bridging **semantic communication**, **large models**, and **token-based information transfer**.
+A curated list of representative works on **token-level / tokenization-driven semantic communication** (e.g., **Token Communications / TokCom / TokenCom**), covering **token as communication unit**, **semantic token selection**, **token-domain transmission**, and **LLM- or foundation-model-guided reconstruction**.
+
+This repository focuses on research at the intersection of:
+- **Semantic Communication**
+- **Large Language Models (LLMs) / Foundation Models**
+- **Token-level representation and transmission**
+- **Cross-modal semantic encoding and reconstruction**
 
 ---
 
 ## 📘 Overview
 
-Traditional communication systems aim to transmit bits faithfully. **Semantic communication** instead focuses on transmitting *meaning*.  
-Recent studies propose **token-level communication frameworks**, where tokens (semantic units) become the basic transmission symbols.  
-These frameworks leverage **Transformers**, **LLMs**, and **cross-modal embeddings** to achieve higher semantic efficiency, compression, and interpretability.
+Traditional communication systems aim to transmit **bits** reliably.  
+By contrast, **semantic communication** aims to transmit the **meaning** required for a downstream task.
+
+A recent research trend pushes this idea further by treating **tokens** as the basic communication units. In these frameworks, source content (text, image patches, visual codes, or multimodal symbols) is mapped into tokens, which are then selectively transmitted, aggregated, decoded, or regenerated with the help of **Transformers**, **LLMs**, and **foundation models**.
+
+This paradigm is promising because it can improve:
+- **semantic efficiency** (send only what matters),
+- **compression** (fewer transmitted symbols),
+- **task-awareness** (adapt to downstream inference goals), and
+- **interpretability** (tokens are easier to inspect than latent vectors).
 
 ---
 
-## 🧩 Core Papers
+## 🧩 Papers
 
-| Year | Title | Authors / Affiliations | Link |
-|------|--------|------------------------|------|
-| **2025 (May)** | **Adaptive Semantic Token Communication for Transformer-based Edge Inference** | Alessio Devoto, Jary Pomponi, Mattia Merluzzi, Paolo Di Lorenzo, Simone Scardapane | [arXiv:2505.17604](https://arxiv.org/abs/2505.17604) |
-| **2025 (May)** | **ToDMA: Large Model-Driven Token-Domain Multiple Access for Semantic Communications** | Li Qiao, Mahdi Boloursaz Mashhadi, Zhen Gao, Robert Schober, Deniz Gündüz | [arXiv:2505.10946](https://arxiv.org/abs/2505.10946) |
-| **2025 (April)** | **Semantic Packet Aggregation for Token Communication via Genetic Beam Search (SemPA-GBeam)** | Seunghun Lee, Jihong Park, Jinho Choi, Hyuncheol Park | [arXiv:2504.19591](https://arxiv.org/abs/2504.19591) |
-| **2025 (February)** | **Token-Domain Multiple Access: Exploiting Semantic Orthogonality for Collision Mitigation** | Li Qiao, Mahdi Boloursaz Mashhadi, Zhen Gao, Deniz Gündüz | [arXiv:2502.06118](https://arxiv.org/abs/2502.06118) |
-| **2025 (February)** | **Token Communications: A Large Model-Driven Framework for Cross-modal Context-aware Semantic Communications** | Li Qiao, Mahdi Boloursaz Mashhadi, Zhen Gao, Rahim Tafazolli, Mehdi Bennis, Dusit Niyato | [arXiv:2502.12096](https://arxiv.org/abs/2502.12096) |
-| **2025 (January)** | **SemToken: Semantic-Aware Tokenization for Efficient Long-Context Language Modeling** | Yueyi Zhang, et al. | [arXiv:2508.15190](https://arxiv.org/abs/2508.15190) |
-| **2024 (July)** | **Text-Guided Token Communication for Wireless Image Transmission** | Bole Liu, Li Qiao, Ye Wang, Zhen Gao, Yu Ma, Keke Ying, Tong Qin | [arXiv:2507.05781](https://arxiv.org/abs/2507.05781) |
-| **2024 (May)** | **Adaptive Semantic Token Selection for AI-native Goal-oriented Communications** | Alessio Devoto, Simone Petruzzi, Jary Pomponi, Paolo Di Lorenzo, Simone Scardapane | [arXiv:2405.02330](https://arxiv.org/abs/2405.02330) |
-| **2024 (June)** | **Towards Semantic Equivalence of Tokenization in Multimodal LLMs (SeTok)** | Chenjie Gu, et al. | [arXiv:2406.05127](https://arxiv.org/abs/2406.05127) |
-| **2024 (Survey)** | **A Survey on Semantic Communications: Technologies and Solutions** | IEEE Communications Surveys & Tutorials | [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352864823000925) |
-| **2024 (Survey)** | **Generative Semantic Communication: Architectures and Technologies** | IEEE Internet of Things Journal | [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2095809925004291) |
-
----
-
-## 🧠 Categorization
-
-### 🔹 1. Adaptive Tokenization & Semantic Encoding
-- **Adaptive Semantic Token Communication for Transformer-based Edge Inference** — Dynamic token selection and transmission for edge AI inference.  
-- **Adaptive Semantic Token Selection for AI-native Goal-oriented Communications** — Resource-aware semantic token pruning.  
-- **SemToken** — Semantic-aware tokenization for efficient long-context modeling.  
-- **SeTok** — Ensures semantic equivalence in multimodal tokenization.
-
-### 🔹 2. Token-Based Semantic Communication Frameworks
-- **Token Communications (TokCom)** — Foundational LLM-driven token-level framework.  
-- **ToDMA** — Token-domain multiple access using large model priors.  
-- **Token-Domain Multiple Access (Semantic Orthogonality)** — Exploits semantic orthogonality for collision mitigation.  
-- **Text-Guided Token Communication** — Uses text prompts to enhance wireless image transmission.  
-- **SemPA-GBeam** — Genetic-beam token aggregation for reliable semantic packet transmission.
-
-### 🔹 3. Surveys & Generative Paradigms
-- **A Survey on Semantic Communications** — Comprehensive review of semantic communication technologies.  
-- **Generative Semantic Communication** — Discusses LLM-driven generative architectures for semantic transmission.
+| Year | Title | Authors | Venue / Status | Link |
+|------|-------|---------|----------------|------|
+| **2024 (May)** | **Adaptive Semantic Token Selection for AI-native Goal-oriented Communications** | Alessio Devoto, Simone Petruzzi, Jary Pomponi, Paolo Di Lorenzo, Simone Scardapane | arXiv / IEEE Globecom Workshops 2024 | [arXiv:2405.02330](https://arxiv.org/abs/2405.02330) |
+| **2024 (May)** | **Semantic Importance-Aware Communications with Semantic Correction Using Large Language Models** | Shuaishuai Guo, Yanhu Wang, Jia Ye, Anbang Zhang, Kun Xu | arXiv | [arXiv:2405.16011](https://arxiv.org/abs/2405.16011) |
+| **2024 (Jun)** | **Towards Semantic Equivalence of Tokenization in Multimodal LLMs (SeTok)** | Shengqiong Wu, Hao Fei, Xiangtai Li, Jiayi Ji, Hanwang Zhang, Tat-Seng Chua, Shuicheng Yan | arXiv / ICLR 2025 | [arXiv:2406.05127](https://arxiv.org/abs/2406.05127) |
+| **2024 (Aug)** | **Rethinking Generative Semantic Communication for Multi-User Systems with Multi-Modal LLM** | Wanting Yang, Zehui Xiong, Shiwen Mao, Tony Q. S. Quek, Ping Zhang, Merouane Debbah, Rahim Tafazolli | arXiv | [arXiv:2408.08765](https://arxiv.org/abs/2408.08765) |
+| **2024** | **A Survey on Semantic Communications: Technologies, Solutions, Applications and Challenges** | Guan Gui, Zhe Yang, Hsiao-Hwa Chen, Ming Xiao | Digital Communications and Networks | [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352864823000925) |
+| **2024 / 2025** | **Generative Semantic Communication: Architectures and Technologies** | Xiang Chen, Hao Du, Dusit Niyato, et al. | arXiv / survey-style overview | [arXiv:2412.08642](https://arxiv.org/abs/2412.08642) |
+| **2025 (Jan)** | **Large Model Empowered Multi-Modal Semantic Communication With Selective Tokens for Training** | Jincheng Peng, Huanlai Xing, Fuhui Zhou, Dusit Niyato, Xianfu Lei | IEEE Signal Processing Letters | [Semantic Scholar entry](https://www.semanticscholar.org/paper/Large-Model-Empowered-Multi-Modal-Semantic-With-for-Peng-Xing/eb4b18696ad562809129a45acfa02f420c930ec6) |
+| **2025 (Feb)** | **Token-Domain Multiple Access: Exploiting Semantic Orthogonality for Collision Mitigation** | Li Qiao, Mahdi Boloursaz Mashhadi, Zhen Gao, Deniz Gündüz | arXiv / INFOCOM Workshops 2025 | [arXiv:2502.06118](https://arxiv.org/abs/2502.06118) |
+| **2025 (Feb)** | **Token Communications: A Large Model-Driven Framework for Cross-modal Context-aware Semantic Communications** | Li Qiao, Mahdi Boloursaz Mashhadi, Zhen Gao, Rahim Tafazolli, Mehdi Bennis, Dusit Niyato | arXiv | [arXiv:2502.12096](https://arxiv.org/abs/2502.12096) |
+| **2025 (Feb)** | **A Contemporary Survey on Semantic Communications: Theory of Mind, Generative AI, and Deep Joint Source-Channel Coding** | Loc X. Nguyen, Avi Deb Raha, Pyae Sone Aung, Dusit Niyato, Zhu Han, Choong Seon Hong | arXiv / later IEEE Communications Surveys & Tutorials | [arXiv:2502.16468](https://arxiv.org/abs/2502.16468) |
+| **2025 (Mar)** | **Multi-Task Semantic Communications via Large Models** | Wanli Ni, Zhijin Qin, Haofeng Sun, Xiaoming Tao, Zhu Han | arXiv | [arXiv:2503.22064](https://arxiv.org/abs/2503.22064) |
+| **2025 (Apr)** | **Semantic Packet Aggregation for Token Communication via Genetic Beam Search** | Seunghun Lee, Jihong Park, Jinho Choi, Hyuncheol Park | arXiv | [arXiv:2504.19591](https://arxiv.org/abs/2504.19591) |
+| **2025 (May)** | **ToDMA: Large Model-Driven Token-Domain Multiple Access for Semantic Communications** | Li Qiao, Mahdi Boloursaz Mashhadi, Zhen Gao, Robert Schober, Deniz Gündüz | arXiv | [arXiv:2505.10946](https://arxiv.org/abs/2505.10946) |
+| **2025 (May)** | **Adaptive Semantic Token Communication for Transformer-based Edge Inference** | Alessio Devoto, Jary Pomponi, Mattia Merluzzi, Paolo Di Lorenzo, Simone Scardapane | arXiv | [arXiv:2505.17604](https://arxiv.org/abs/2505.17604) |
+| **2025 (Jul)** | **Text-Guided Token Communication for Wireless Image Transmission** | Bole Liu, Li Qiao, Ye Wang, Zhen Gao, Yu Ma, Keke Ying, Tong Qin | arXiv / IEEE ICCC 2025 | [arXiv:2507.05781](https://arxiv.org/abs/2507.05781) |
+| **2025 (Aug)** | **SemToken: Semantic-Aware Tokenization for Efficient Long-Context Language Modeling** | Dong Liu, Yanxuan Yu | arXiv | [arXiv:2508.15190](https://arxiv.org/abs/2508.15190) |
+| **2025 (Sep)** | **Adaptive Pareto-Optimal Token Merging for Edge Transformer Models in Semantic Communication** | Omar Erak, Omar Alhussein, Hatem Abou-Zeid, Mehdi Bennis | arXiv | [arXiv:2509.09168](https://arxiv.org/abs/2509.09168) |
+| **2025 (Sep)** | **Adaptive Token Merging for Efficient Transformer Semantic Communication at the Edge** | Omar Erak, Omar Alhussein, Hatem Abou-Zeid, Mehdi Bennis, Sami Muhaidat | arXiv | [arXiv:2509.09955](https://arxiv.org/abs/2509.09955) |
+| **2026 (Feb)** | **Wireless TokenCom: RL-Based Tokenizer Agreement for Semantic-Aware Wireless Resource Allocation** | Fatemeh Zeinali, Mahdi Boloursaz Mashhadi, Michail Matthaiou, H. Vincent Poor, Mehdi Bennis | arXiv | [arXiv:2602.12338](https://arxiv.org/abs/2602.12338) |
+| **2026 (Mar)** | **Video TokenCom: Textual Intent-Guided Multi-Rate Video Token Communications with UEP-Based Adaptive Source-Channel Coding** | Jingxuan Men, Mahdi Boloursaz Mashhadi, Ning Wang, Yi Ma, Mike Nilsson, Rahim Tafazolli | arXiv | [arXiv:2603.02470](https://arxiv.org/abs/2603.02470) |
 
 ---
 
-## 🧩 Future Research Directions
+## 📝 Notes
 
-- Adaptive token selection for edge AI and goal-oriented tasks  
-- Token-domain collision mitigation and semantic orthogonality  
-- Generative semantic reconstruction with multimodal LLMs  
-- Resource-efficient token scheduling for large-scale networks  
+- This list includes **core TokenCom papers**, **closely related neighboring works**, and **survey/background papers**.
+- The papers are listed in **chronological order** only.
+- Most recent items are currently available as **arXiv preprints**; some also have workshop, conference, or journal versions.
 
 ---
+
+## 🤝 Contribution
+
+Pull requests are welcome for:
+- newly published TokCom / TokenCom papers,
+- related semantic communication papers,
+- benchmark datasets,
+- tutorial or survey papers.
+
+---
+
+## ⭐ Citation
+
+If this repository helps your work, please consider starring it and citing the relevant original papers.
